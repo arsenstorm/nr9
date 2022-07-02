@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta naus="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NR9 - Anonymous File and Link Sharing</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <section id="about-us">
+      <nav>
+        <div class="personal__logo text--orange">NERVERIFT NINE</div>
+        <ul class="nav__link--list">
+          <li class="nav__link">
+            <a
+              href="#file"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >File Sharing</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#link"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Link Sharing</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="mailto:us@nr9.me"
+              class="nav__link--anchor nav__link--anchor-primary"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="flex flex-1">
+        <div class="about-us__info row">
+          <div class="about-us__info--container">
+            <h1 class="about-us__info--title">
+              Hey! Welcome to <span class="text--orange">NR9</span>&nbsp<span
+                class="wave"
+                >👋</span
+              >
+            </h1>
+            <p class="about-us__info--para">
+              We allow you to
+              <strong class="text--orange">share files</strong> and
+              <strong class="text--orange">share links</strong> for free and
+              anonymously. <br /><br />
+              <a
+                href="#file"
+                class="nav__link--anchor link__hover-effect link__hover-effect--black"
+                >Want to try sharing a file?</a
+              >
+              <br /><br />or perhaps you want to <br /><br /><a
+                href="#link"
+                class="nav__link--anchor link__hover-effect link__hover-effect--black"
+                >try sharing a link?</a
+              >
+            </p>
+            <div class="about-us__links">
+              <a
+                href="https://github.com/arsenstorm/nr9"
+                class="about-us__link"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="mailto:us@nr9.me" class="about-us__link">
+                <i class="far fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+          <figure class="about-us__img--container">
+            <img
+              src="./assets/landing.svg"
+              class="about-us__img"
+              alt=""
+              id="landingImage"
+            />
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section id="file">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            Here you can <span class="text--orange">share a file!</span>
+          </h1>
+          <div class="form__file--container">
+            <form action="" class="form__file">
+              <div class="border__file">
+                <label class="form__file--label">
+                  <input
+                    type="file"
+                    name="file"
+                    id="file__input"
+                    class="form__file--input"
+                  />
+                  <i class="fas fa-upload"></i>&nbsp;&nbsp;
+                  <span class="form__file--text" id="file__text"
+                    >Choose a file</span
+                  >
+                </label>
+                <button type="submit" class="form__file--button">
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </form>
+            <br />
+            <a href="https://docs.nr9.me/support" class="need__help"
+              ><i> need help? </i></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="link">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            Here you can <span class="text--orange">share a link!</span>
+          </h1>
+          <div class="form__file--container">
+            <form action="" class="form__file">
+              <div class="border__file">
+                <!-- create a url input -->
+                <label class="form__file--label">
+                  <input
+                    type="url"
+                    name="url"
+                    id="url__input"
+                    class="form__url--input"
+                    placeholder="Enter a URL...   Any URL...   Your URL..."
+                  />
+                  &nbsp;&nbsp;<i class="fas fa-link"></i>&nbsp;&nbsp;
+                  <span class="form__file--text" id="url__text"
+                    ></span
+                  >
+                <button type="submit" class="form__file--button">
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </form>
+            <br />
+            <a href="https://docs.nr9.me/support" class="need__help"
+              ><i>need help?</i></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="row footer__row">
+        <div class="footer__social--list">
+          <a
+            href="https://github.com/arsenstorm/nr9"
+            class="footer__social--link link__hover-effect link__hover-effect--white"
+            target="_blank"
+            >NERVRIFT NINE on Github</a
+          >
+          <a
+            href="mailto:us@astorm.dev"
+            class="footer__social--link link__hover-effect link__hover-effect--white"
+            target="_blank"
+            >Email NERVERIFT NINE</a
+          >
+        </div>
+        <div class="footer__copyright">
+          Copyright &copy; 2022 NERVERIFT NINE
+        </div>
+      </div>
+    </footer>
+    <script>
+      window.onload = choosePic;
+
+      var possiblePictures = new Array(
+        "./assets/1.svg",
+        "./assets/2.svg",
+        "./assets/3.svg",
+        "./assets/4.svg",
+        "./assets/6.svg"
+      );
+
+      function choosePic() {
+        var randomNum = Math.floor(Math.random() * possiblePictures.length);
+        document.getElementById("landingImage").src =
+          possiblePictures[randomNum];
+      }
+
+      // add an event listener to the element with id file__input and if the user selects a file, change the label with id file__text to the name of the file.
+      document
+        .getElementById("file__input")
+        .addEventListener("change", function () {
+          var fileName = document.getElementById("file__input").value;
+          var fileNameSplit = fileName.split("\\");
+          document.getElementById("file__text").innerHTML =
+            fileNameSplit[fileNameSplit.length - 1];
+        });
+      // thank you copilot
+      // https://stackoverflow.com/questions/19999388/how-to-display-the-selected-file-name-in-a-input-type-file-using-javascript
+      // woah, that's a lot of code for a simple thing.
+    </script>
+  </body>
+</html>

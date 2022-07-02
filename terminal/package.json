@@ -1,0 +1,22 @@
+{
+    "name": "nr9",
+    "version": "1.0.5",
+    "description": "An Open Source Anonymous File Transfer and Link Shortener",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && echo \"Check out the docs at https://docs.nr9.me\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/arsenstorm/nr9.git"
+    },
+    "keywords": [
+        "nr9"
+    ],
+    "author": "Arsen Shkrumelyak <storm@nerverift.com> (https://nr9.me)",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/arsenstorm/nr9/issues"
+    },
+    "homepage": "https://github.com/arsenstorm/nr9#readme"
+}
