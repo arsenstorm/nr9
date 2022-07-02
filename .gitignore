@@ -1,3 +1,6 @@
 # Ignore files related to API keys
 .env
 .npmrc
+
+# Ignore ~ folder
+~
