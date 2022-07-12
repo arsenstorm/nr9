@@ -4,7 +4,9 @@
     "description": "An Open Source Anonymous File Transfer and Link Shortener",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && echo \"Check out the docs at https://docs.nr9.me\" && exit 1"
+        "test": "echo \"Error: no test specified\" && echo \"Check out the docs at https://docs.nr9.me\" && exit 1",
+        "-L": "./shareLink.js",
+        "-F": "./shareFile.js"
     },
     "repository": {
         "type": "git",
